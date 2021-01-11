@@ -1,0 +1,2104 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	font-family: "Gill Sans MT", sans-serif;
+}
+/* =====================================Début class usuelles=============================================*/
+.col-1, .col-2, .col-2-5, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+	float: left;
+	padding: 0 10px;
+}
+.col-1{
+	width: 8.33333333%;
+}
+.col-2{
+	width: 16.6666666%;
+}
+.col-2-5{
+	width: 20%;
+}
+.col-3{
+	width: 25%;
+}
+.col-4{
+	width: 33.3333333%;
+}
+.col-5{
+	width: 41.6666666%;
+}
+.col-6{
+	width: 50%;
+}
+.col-7{
+	width: 58.3333333%;
+}
+.col-8{
+	width: 66.6666666%;
+}
+.col-9{
+	width: 75%;
+}
+.col-10{
+	width: 83.3333333%;
+}
+.col-11{
+	width: 91.66666666%;
+}
+.col-12{
+	width: 100%;
+}
+.offset-1{
+	margin-left: 8.3333333333%;
+}
+.offset-2{
+	margin-left: 16.6666666%;
+}
+.offset-3{
+	margin-left: 25%;
+}
+.offset-4{
+	margin-left: 33.33333%;
+}
+.offset-5{
+	margin-left: 41.666666%;
+}
+.offset-6{
+	margin-left: 50%;
+}
+.row, .clear{
+	clear: both;
+}
+img, video{
+	max-width: 100%;
+}
+/*=====================================================================================================================================================================================================================================================================================================================================*/
+.container{
+	width: 1200px;
+	margin: auto;
+}
+/*=============================================================ADMIN ADMIN ADMIN========================================================================================================================================================================================================================================================================*/
+/*-----------header SITE PUBLIC ------------*/
+header.public{
+	background: url(../img/bg_header2.jpg) center no-repeat;
+	background-size: cover;
+}
+header.public p{
+	text-align: center;
+	padding: 50px 0;
+	opacity: 0.9;
+}
+
+/*-----------header espace déco ------------*/
+.admin .deco{
+	height: 55px;
+}
+.admin .deco .bienvenu{
+	float: left;
+	display: inline-block;
+	font-size: 20px;
+	margin-top: 15px;
+	color : #FF1A00;
+}
+.admin .deco p{
+	float: right;
+	text-align: right;
+	margin-top: 18px;
+	display: inline-block;
+}
+.admin .deco a{
+	background: linear-gradient(to bottom, #ff5c49 0%,#ff1a00 100%);
+	padding: 17px 20px;
+	text-align: right;
+	text-decoration: none;
+	font-weight: 600;
+	color: white;
+	border: 1px solid #ff1a00;
+}
+.admin .deco a:hover{
+	background: white;
+	border: 1px solid #FF1A00;
+	color: #FF1A00;
+}
+/*-----------nav ------------*/
+nav{
+	position: relative;
+	z-index: 900;
+	text-align: center;
+	margin-bottom: 50px;
+	border-top: 1px solid #d7d6d5;
+}
+nav ul{
+	font-size: 0;
+}
+nav li{
+	display: inline-block;
+	border-right: 1px solid #d7d6d5;
+	position: relative;
+	height: 55px;
+}
+nav .first{
+	border-left: 1px solid #d7d6d5;
+}
+nav a{
+	text-decoration: none;
+	line-height: 55px;
+	padding: 13px 19px;
+	font-size: 25px;
+	font-variant: small-caps;
+	color:#383838;
+}
+
+nav a:hover{
+	background: linear-gradient(to bottom, #00aeef 0%,#00aeef 91%,#0095e0 91%,#0095e0 100%);
+	color: white;
+}
+
+nav{
+	background: #fff;
+	height: 55px;
+	box-shadow: 0px 5px 10px -1px rgba(186,186,186,0.5);
+	border-top: 1px solid #d7d6d5;
+	transition: top 3000ms;
+}
+nav a.deroule{
+	background: url(../img/ico_deroule.png) no-repeat center 42px;
+}
+nav a.deroule:hover{
+	background: url(../img/ico_deroule_hover.png) no-repeat center 42px, linear-gradient(to bottom, #00aeef 0%,#00aeef 91%,#0095e0 91%,#0095e0 100%) ;
+
+}
+/*-----------nav ADMIN ------------*/
+.admin nav a{
+	text-decoration: none;
+	line-height: 46px;
+	padding: 13px 10px;
+	font-size: 18px;
+	font-variant: small-caps;
+	color:#383838;
+}
+.admin nav{
+	height: 46px;
+}
+.admin nav li{
+	display: inline-block;
+	border-right: 1px solid #d7d6d5;
+	position: relative;
+	height: 46px;
+}
+/*-----------nav public / menu deroulant ------------*/
+nav ul ul{
+	display : none;
+	position: absolute;
+	top: 54px;
+	width: 400px;
+	text-align: left;
+	border : 1px solid #d7d6d5;
+	background: white;
+}
+nav ul ul li{
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+
+}
+nav ul ul li a{
+	display: block;
+	width: 100%;
+	padding: 0 15px;
+	border-top : 1px solid #d7d6d5;
+	font-size: 22px;
+}
+nav li:hover ul{
+	display: block;
+}
+nav li ul li{
+	border : none;
+}
+nav li ul li:hover{
+	background: linear-gradient(to bottom, #00aeef 0%,#00aeef 91%,#0095e0 91%,#0095e0 100%);
+}
+/*-----------footer ------------*/
+footer{
+	margin-top: 150px;
+	background: url(../img/footer_bg.png) no-repeat right center;
+	height: 276px;
+	padding-top: 176px;
+
+}
+.color_ft{
+	 background: #d3682b url(../img/footer_bg.png) no-repeat right bottom;
+}
+footer .container{
+	text-align: center;
+}
+footer p{
+	color :white;
+}
+footer a{
+	line-height: 100px;
+	padding: 0 10px;
+	text-decoration: none;
+	font-size: 18px;
+	color : white;
+	font-variant: small-caps;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+/*///////////////////////////////INDEX ADMIN//////////////////////////////////////*/
+/*-----------block fond général------------*/
+.bg_block{
+	padding: 15px 15px; 
+	box-shadow: 0px 2px 5px -1px rgba(186,186,186,0.7);
+	border : 1px solid #eee;
+	text-align: center;
+	background: white;
+}
+/*-----------style titre block général------------*/
+h2{
+	margin-bottom: 10px;
+	margin-left: 15px;
+	color : #00aeef;
+}
+/*-----------bouton ajouter------------*/
+.admin .ajouter a{
+	display: inline-block;
+	font-weight: 600;
+	background: linear-gradient(to bottom, #f47b20 0%,#c96b28 100%);
+	text-decoration: none;
+	color: white;
+	padding: 10px 15px;
+	border :1px solid #af5308;
+	margin-bottom: 10px;
+	font-variant: small-caps;
+}
+.admin .ajouter a:hover{
+	color : #f47b20;
+	background: white;
+}
+/*----------- tableau de l'index------------*/
+.admin table{
+	width: 100%;	
+ 	text-align: center;
+ 	border-collapse: collapse;
+}
+.admin th{
+	background: #7fd7ff;
+	border-left :1px solid #1392cc ;
+	border-right: 1px solid #1392cc;
+	border-top : 1px solid #1392cc;
+	padding: 10px;
+}
+.admin table .id{
+	width: 5%;
+}
+.admin table .titre{
+	width: 15%;
+}
+.admin table .texte{
+	width: 30%;
+}
+.admin table .auteur{
+	width: 15%;
+}
+.admin table .date{
+	width: 15%;
+}
+.admin td{
+	padding: 15px 10px;
+	border :1px solid #ccc;
+}
+.admin tr:nth-child(odd) td{
+	background: #ccc;
+	border : 1px solid #eee;
+}
+/*--------------bouton modifier-------------*/
+.admin table .modif{
+	text-decoration: none;
+	background: linear-gradient(to bottom, #009be0 0%,#0083d0 100%);
+	border : 1px solid #0866af;
+	padding: 6px 12px;
+	color: white;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.admin table .modif:hover{
+	background: white;
+	color :#0093db ;
+}
+/*--------------bouton supprimer-------------*/
+.admin table .sup{
+	text-decoration: none;
+	background: linear-gradient(to bottom, #ff1a00 0%,#d80000 100%);
+	border : 1px solid #BC0000;
+	padding: 6px 12px;
+	color: white;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.admin table .sup:hover{
+	background: white;
+	color :#FF1A00 ;
+}
+/*--------------bouton voir-------------*/
+.admin table .voir{
+	text-decoration: none;
+	background: linear-gradient(to bottom, #f47b20 0%,#c96b28 100%);
+	border : 1px solid #af5308;
+	padding: 6px 12px;
+	color: white;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.admin table .voir:hover{
+	background: white;
+	color :#f47b20 ;
+}
+/*--------------bouton supprimer-------------*/
+.admin table .noacces{
+	text-decoration: none;
+	background: url(../img/acces_interdit.jpg);
+	border : 1px solid black;
+	padding: 6px 12px;
+	color: transparent; 
+	font-weight: 600;
+	font-variant: small-caps;
+}
+
+/*////////////////////////////////AJOUT ACTUALITE ADMIN///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*-----------style titre label ajout------------*/
+.admin section label{
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+	color : #00aeef;
+	font-weight: 600;
+	font-size: 25px;
+}
+/*-----------style block input textarea et select etc...------------*/
+.admin section input, .admin section textarea, .admin section select{
+	padding: 10px 10px;
+	width: 50%;
+	font-size: 16px;
+	box-shadow: 0px 2px 5px -1px rgba(186,186,186,0.7);
+	border : 1px solid #eee;
+}
+.admin section textarea{
+	resize: vertical;
+	height: 200px;
+	width: 100%;
+}
+/*-----------bouton submit------------*/
+.admin section .submit{
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 50px;
+	width: 50%;
+	border: 1px solid #aaa;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.admin section .submit:hover{
+	background: #00d719;
+	color: white; 
+}
+.admin .tarifs .submit{
+	margin-left: 0;
+}
+/*-----------style titre ajout article/cal/admin------------*/
+.admin .titre{
+	text-align: center;
+}
+.admin .titre h1{
+	display: inline-block;
+	background: #00aeef;
+	padding: 25px 40px;
+	color: white;
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////GESTION TARIFS ////////////////////////////////////////////////////////ADMIN////////////////////////////////////////////////*/
+/*-----------style alerte ------------*/
+.alert{
+	text-align: center;
+}
+.good_alert{
+	display: inline-block;	
+	text-align: center;
+	background: #89c527	;
+	padding: 15px 30px;
+	color: white;
+	margin-bottom: 40px; 
+}
+.bad_alert, .textcenter .bad_alert{
+	display: inline-block;	
+	text-align: center;
+	background: #db0100	;
+	padding: 15px 30px;
+	color: white;
+	margin-bottom: 40px; 
+}
+.admin .textcenter{
+	margin-top: 20px;
+	text-align: center;
+}
+/*-----------style tableau tarif ------------*/
+
+.admin table.tarifs{
+	border :1px solid black;
+	margin-top: 30px;
+}
+.admin section .tarifs{
+	width: 100%;	
+	text-align: center ;
+	border-collapse: collapses;
+	background: white;
+}
+.admin .tarifs th.adh{
+	background: #cb5121;
+	border:1px solid black;
+	padding: 5px;
+	color: #240a00;
+	font-size: 25px;
+}
+.admin .tarifs th.adh2{
+	background: #ff8038;
+	border:1px solid black;
+	color: #571b03;
+}
+.admin .tarifs tr:nth-child(odd) td, .admin .tarifs tr td{
+	background: none;
+	border : none;
+}
+.admin .tarifs input{
+	text-align: center;
+}
+.admin .tarifs th.adh3{
+	background: #cb7121;
+	border : 1px solid black;
+	font-size: 25px;
+	color: #240a00;
+}
+.admin .tarifs th.adh4{
+	background: #e38855;
+	border : 1px solid black;
+	color: #571b03;
+}
+.admin .tarifs th.adh5{
+	background: #ec8f3d;
+	border : 1px solid black;
+	font-size:25px;
+	color: #240a00;
+}
+.admin .tarifs th.adh6{
+	background: #f2a377;
+	border : 1px solid black;
+	color: #571b03;
+}
+.admin .tarifs .submit{
+	margin: 15px 0;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////ADMIN SUP_ACT////////////////////////////////*/
+/*-----------style article pour suppression ------------*/
+.admin .sup_act{
+	text-align: center;
+}
+.admin .sup_act .sup_act2{
+	padding: 10px 10px;
+	width: 700px;
+	font-size: 16px;
+	box-shadow: 0px 2px 5px -1px rgba(186,186,186,0.7);
+	border : 1px solid #eee;
+	margin:auto;
+	margin-top: 30px;
+	text-align: left;
+}
+.admin .sup_act .sup_act2 h2{
+	margin : 0;
+}
+.admin .sup_act .sup_act2 h3{
+	margin-bottom: 10px;
+	font-weight: 400;
+	font-style: italic;
+	color : #f2a377 ;
+	font-size: 18px;
+}
+.admin .sup_act .sup_act2 p{
+	color: #7b7a7a;
+}
+.admin .sup_act p img{
+	float: left;
+	width: 30%;
+	margin-right: 10px;		
+}
+/*----------- style OUI OU NON------------*/
+.admin .sup_act .yesorno{
+	margin-top: 40px;
+}
+.admin .sup_act .yes,.admin .sup_act .no{
+	text-decoration: none;
+	padding: 20px 25px;
+	color: 	white;
+	font-weight: 600;
+	font-size: 30px;
+	border : 1px solid transparent;
+}
+.admin .sup_act .yes{
+	background: linear-gradient(to bottom, #87ed2f 0%,#89c527 100%);
+	margin-right: 20px;
+	border : 1px solid #89c527;
+}
+.admin .sup_act .no{
+	background: linear-gradient(to bottom, #ff0000 64%,#db0100 100%);
+	padding: 20px 25px;
+	border: 1px solid #db0100;
+}
+.admin .sup_act .yes:hover{
+	background: white;
+	border : 1px solid #89c527;
+	color :#89c527;
+}
+.admin .sup_act .no:hover{
+	background: white;
+	border : 1px solid #db0100;
+	color :#db0100;
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////ADMIN CONF_SUP_ACT////////////////////////////////*/
+.admin .conf_sup_act{
+	text-align: center;
+}
+.back{
+	background: linear-gradient(to bottom, #cecece 0%,#aaa 100%);
+	padding: 10px 15px;
+	text-decoration: none;
+	color: 	white;
+	font-weight: 600;
+	font-size: 20px;
+	border: 1px solid #878787;
+}
+.back:hover{
+	background: white;
+	color : #878787;
+	border : 1px solid #878787;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////ADMIN MODIF_ACT /////////////////////////////////////////*/
+.back_p{
+	margin-top: 40px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.admin .img_modif label{
+	display: inline-block;
+}
+.alerte{
+	display: inline-block;
+	background: #db0100;
+	padding: 5px 10px;
+	margin-left: 20px;
+	color: white;
+	font-weight: 600;
+	font-size: 17px;
+}
+.admin .rappel{
+	display: inline-block;
+	background: #cb7121;
+	padding: 5px 10px;
+	margin-left: 20px;
+	color: white;
+	font-weight: 600;
+	font-size: 17px;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////ADMIN GESTION_GALERIE.PHP /////////////////////////////////////////*/
+.admin table img{
+	width: 20%;
+}
+.admin .validation_sup{
+	padding: 15px 0;
+	width: 12%;
+}
+.admin .validation_sup .oui{
+	background: #87ed2f;
+	border : 1px solid #89c527;
+}
+.admin .validation_sup .non{
+	background: #009be0 ;
+	border : 1px solid #0866af;
+}
+.admin .bg_texte{
+	margin: 10px 2px;
+	margin-top: 0;
+	padding: 10px 10px;
+	background: #ffafaf;
+	text-align: center;
+}
+.admin .bg_texte h5{
+	color: #ff0100;
+	font-size: 24px;
+	padding-right: 6px;
+	font-variant: small-caps;
+}
+.admin .bg_texte p{
+	font-size: 17px;
+	color: #ff0100;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////////////////ADMIN AUTH.PHP ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.admin .auth form{
+/*	margin-left: 25%;*/
+	margin-top: 50px;
+}
+.admin .auth h1{
+	margin-top: 30px;
+}
+.admin .bg_auth{
+	display: block;
+	margin : auto;
+	width: 50%;
+}
+.admin .auth form{
+	text-align: center;
+}
+.admin .auth label{		
+	display: inline-block;
+	text-align: center;
+	padding: 10px 10px;
+	color: #00aeef;
+	font-weight: 600;
+	font-size: 30px;
+}
+.admin .auth input{
+	padding: 10px 10px;
+	width: 50%;
+	font-size: 16px;
+	box-shadow: 0px 2px 5px -1px rgba(186,186,186,0.7);
+	border: 1px solid #eee;
+}
+.admin .auth input.submit{
+	margin-top: 30px;
+	font-weight: 600;
+}
+.admin .auth .submit:hover{
+	background: #00d719;
+	color: white; 
+
+}
+/*///////////////////////////////////////////////////////ADMIN gestion_cal.php ////////////////////////////////////////////////////////////////////////////////*/
+/*//////////tableau//////////*/
+/*-----------taille cellule--------------*/
+.admin table .date_cal{
+	width: 10%;
+}
+.admin table .titre_cal	{
+	width: 30%;
+}
+.admin table .com_cal{
+	width: 40%;
+}
+/*-----------Couleurs th selon cat--------------*/
+.admin .cat-1 th{
+	background: #7fd7ff;
+	border-left :1px solid #1392cc ;
+	border-right: 1px solid #1392cc;
+	border-top : 1px solid #1392cc;
+	padding: 10px;
+}
+.admin .cat-2 th{
+	background: #e88c57;
+	border-left :1px solid #d16a2f ;
+	border-right: 1px solid #d16a2f;
+	border-top : 1px solid #d16a2f;
+	padding: 10px;
+}
+.admin .cat-3 th{
+	background: #ccc;
+	border-left :1px solid #aaa ;
+	border-right: 1px solid #aaa;
+	border-top : 1px solid #aaa;
+	padding: 10px;
+}
+/*-----------couleur titre tableau selon cat--------------*/
+.admin .cat-1 h2{
+	margin-top: 10px;
+}
+.admin .cat-2 h2{
+	margin-top: 30px;
+	color: #d16a2f;
+}
+.admin .cat-3 h2{
+	margin-top: 30px;
+	color: #aaa;
+}
+/*//////////////Fin tableau///////////*/
+/*////////////////////////////////////////////////////////////PUBLIC index.php///////////////////////////////////////////////////////////////////*/
+video{
+	display: block;
+	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 15px;
+	box-shadow: 0px 2px 10px -1px rgba(186,186,186,0.7);
+}
+/*-----------boutons--------------*/
+.boutons{
+	text-align: center;
+}
+.boutons p{
+	display: inline-block;
+	margin: 0 40px;
+	margin-bottom: 50px;
+}
+.boutons a{
+	box-shadow: 0px 2px 10px -1px rgba(186,186,186,0.7);
+	text-decoration: none;
+	background: linear-gradient(to bottom, #f47b20 0%,#c96b28 100%);
+	border : 1px solid #af5308;
+	padding: 6px 12px;
+	color: white;
+	font-weight: 600;
+	font-variant: small-caps;
+	font-size: 30px;
+}
+.boutons a:hover{
+	color : #f47b20;
+	background:white;
+}
+.boutons a.resa{
+	box-shadow: 0px 2px 10px -1px rgba(186,186,186,0.7);
+	text-decoration: none;
+	background: linear-gradient(to bottom, #009be0 0%,#0083d0 100%);
+	border : 1px solid #0083d0;
+	padding: 6px 12px;
+	color: white;
+	font-weight: 600;
+	font-variant: small-caps;
+	font-size: 30px;
+}
+.boutons a.resa:hover{
+	color : #009be0;
+	background:white;
+}
+.boutons a.livreor{
+	box-shadow: 0px 2px 10px -1px rgba(186,186,186,0.7);
+	text-decoration: none;
+	background: linear-gradient(to bottom, #ede02f 0%,#dbbb2b 100%);
+	border : 1px solid #dbbb2b;
+	padding: 6px 12px;
+	color: white;
+	font-weight: 600;
+	font-variant: small-caps;
+	font-size: 30px;
+}
+.boutons a.livreor:hover{
+	color : #ede02f;
+	background:white;
+}
+/*-----------NEWS--------------*/
+.article_index:hover{
+	opacity: 0.8;
+}
+.article_index:hover img{
+	border: 2px solid #d3682b;
+}
+.bg_news{
+	height: 525px;
+}
+.news{
+	text-align: left;
+	position: relative;
+}
+.news img{
+	float: left;
+	width: 30%;
+	margin-right: 10px;
+	border: 2px solid transparent; 
+}
+.news h3{
+	font-size: 20px;
+	color: #383838;
+	font-weight: 400;
+}
+.news .auteur{
+	font-style: italic;
+	font-size: 14x;
+	color :#d3682b;
+}
+.news .sep_act{
+	margin-top: 5px;
+	border-bottom: 1px solid #959595;
+}
+.news .sep_act2{
+	bottom: 11px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.news .texte{
+	margin-top: 10px;
+	color: #7b7a7a;
+	margin-bottom: 15px;
+	min-height: 54px;
+}
+.news .textefin{
+	margin-bottom: 0;
+}
+.news .divtexte p{
+	margin-top: 10px;
+	color: #7b7a7a;
+	margin-bottom: 15px;
+}
+.news div{
+	padding-bottom: 40px;
+}
+.news .date{
+	float: left;
+	color :#d3682b;
+	font-size: 16px;
+}
+.news .suite a{
+	float: right;
+	color: #d3682b;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 20px;
+}
+.news .suite a:hover{
+	text-decoration: underline;
+}
+.titre_page2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+#galerie_photo{
+	display: inline-block;
+	background: #00aeef;
+	padding: 20px 20px;
+	color: white;
+	font-weight: 600;
+}
+/*-----------AGENDA--------------*/
+.bg_agd{
+	height: 525px;
+	overflow: hidden; /*Cache ce qu'il y a en dehors du cadre*/
+	border-bottom: 15px solid white;
+}
+.agenda{
+	padding : 16px 10px;
+	text-align: left;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.agenda .date a{
+	font-size: 20px;
+	color: #d3682b;
+	text-decoration: none;
+}
+.agenda .date a:hover{
+	text-decoration: underline;
+}
+.agenda h3{
+	font-size: 17px;
+	color: #383838;
+}
+.agenda .com{
+	padding-top: 5px;
+	font-size: 14px;
+	color: #7b7a7a;
+}
+/*///////////////////////////////////////////////////////PUBLIC livre_or.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.bg_block {
+	text-align: left;
+	margin-bottom: 25px;
+}
+/*-----------style titre_page------------*/
+.titre_page{
+	text-align: left;
+}
+/*-----------style titre label ajout------------*/
+label{
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+	color : #d3682b;
+	font-weight: 600;
+	font-size: 18px;
+}
+/*-----------style block input textarea et select etc...------------*/
+section input, section textarea, section select{
+	padding: 10px 10px;
+	width: 50%;
+	font-size: 16px;
+	border : 1px solid #eee;
+}
+section textarea{
+	resize: vertical;
+	height: 200px;
+	width: 100%;
+}
+/*-----------bouton submit------------*/
+section .submit{
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 10px;
+	width: 50%;
+	border: 1px solid #aaa;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+section .submit:hover{
+	background: #00d719;
+	color: white; 
+}
+section .nochoice{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+.g-recaptcha{
+	width: 25%;
+	margin: auto;
+}
+/*-----------block témoignage------------*/
+.bg_tem{
+	max-height: 1200px;
+	overflow: auto;
+	border-bottom: 15px solid white;
+}
+/*-----------boucle témoignage------------*/
+.temoignage{
+	margin: 0 20px;
+	border-bottom: 1px solid #ccc	;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+.temoignage h3{
+	font-size: 20px;
+	color: #383838;
+}
+.temoignage .date{
+	font-size: 17px;
+	color: #d3682b;
+}
+.temoignage .texte{
+	font-size: 16px;
+	color: #7b7a7a;
+}
+.temoignage .bg_texte{
+	margin: 10px 10px;
+	padding: 10px 10px;
+	background: #f7f7f7;
+}
+/*///////////////////////////////////////////////////////PUBLIC devenir_membre.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*-----------mise en forme du texte------------*/
+.devenir_membre p, .devenir_membre h3{
+	padding-left: 10px;
+	padding-bottom: 10px;
+
+}
+.devenir_membre p{
+	font-size: 18px;
+}
+.devenir_membre em{
+	color :#d3682b;
+}
+.devenir_membre .venez strong{
+	font-weight: 600;
+}
+.devenir_membre i{
+	font-size: 20px;
+}
+.devenir_membre h3{
+	color : #d3682b;
+	font-size: 25px;
+}
+.devenir_membre h4{
+	color: #d3682b;
+	font-size: 20px;
+	margin-top: 10px;
+	padding-bottom: 5px;
+}
+.devenir_membre ul{
+	font-size: 18px;
+	padding-left: 50px;
+	padding-bottom: 10px;	
+}
+.devenir_membre .venez{
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 600;
+	color: white;
+	background: #009be0;
+	padding: 15px 20px;
+	margin-left: 50px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+.devenir_membre .bg_block div{
+	padding : 15px;
+	background: #f7f7f7;
+	margin-top: 15px;
+	color : #7b7a7a;
+}
+.devenir_membre h5{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;
+	color: white;
+	background: #d3682b;
+	padding: 10px 15px;
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+/*-----------bouton telecharger------------*/
+.devenir_membre .boutons{
+	margin-top: 15px;
+}
+.devenir_membre .boutons a{
+	background: linear-gradient(to bottom, #87ed2f 0%,#89c527 100%);
+	border : 1px solid #89c527;
+
+}
+.devenir_membre .boutons a:hover{
+	color : #89c527;
+	background:white;
+}
+/*///////////////////////////////////////////////////////PUBLIC calendrier_reservation.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+/*-----------informations------------*/
+.cal_resa .bg_info{
+	text-align: center;
+}
+.cal_resa .info{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	background: #009be0;
+	padding: 15px 20px;
+	text-align: center;
+	width: 75%;
+	margin-bottom: 25px;
+}
+.info_green{
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	color: white;
+	background: #89c527;
+	padding: 15px 20px;
+	text-align: center;
+	width: 75%;
+	margin-bottom: 25px;
+}
+.cal_resa h3{
+	text-align: center;
+}
+.cal_resa .col-6{
+	text-align: center;
+	margin-top: 25px;
+}
+/*-----------informations CLOT------------*/
+.cal_resa .clot p{
+	display: inline-block;
+	background: #009be0;
+	padding: 10px 20px;
+	color :white;
+	font-weight: 600;
+	font-size: 20px;
+}
+.cal_resa .clot span{
+	font-weight: 400;
+}
+.cal_resa .clot .margin{
+	margin-bottom: 5px;
+}*
+.cal_resa .clot .email{
+	text-decoration: underline;
+}
+.cal_resa .clot .number, .cal_resa .clot .email{
+	font-size:17px;
+}
+/*-----------informations ROCHAS------------*/
+.cal_resa .rochas p{
+	display: inline-block;
+	background: #d3682b	;
+	padding: 10px 20px;
+	color :white;
+	font-weight: 600;
+	font-size: 20px;
+}
+.cal_resa .rochas span{
+	font-weight: 400;
+}
+.cal_resa .rochas .margin{
+	margin-bottom: 5px;
+}
+.cal_resa .rochas .email{
+	text-decoration: underline;
+}
+.cal_resa .rochas .number, .cal_resa .rochas .email{
+	font-size:17px;
+}
+/*//////////tableau//////////*/
+.cal_resa table{
+	width: 100%;
+}
+/*-----------taille cellule--------------*/
+.cal_resa table .date_cal{
+	width: 15%;
+}
+.cal_resa table .titre_cal{
+	width: 30%;
+}
+.cal_resa table .com_cal{
+	width: 	55%;
+}
+/*-----------Couleurs th selon cat--------------*/
+.cal_resa .cat-1 th{
+	background: #7fd7ff;
+	padding: 10px;
+}
+.cal_resa .cat-2 th{
+	background: #e88c57;
+	border-left :1px solid #d16a2f ;
+	border-right: 1px solid #d16a2f;
+	padding: 10px;
+}
+.cal_resa .cat-3 th{
+	background: #ccc;
+	border-left :1px solid #aaa ;
+	border-right: 1px solid #aaa;
+	padding: 10px;
+}
+/*-----------couleur titre tableau selon cat--------------*/
+.cal_resa .cat-1 h2{
+	display: inline-block;
+	background: #1392cc	;
+	margin-top: 10px;
+	color :white;
+	padding: 15px 20px;
+}
+.cal_resa .cat-2 h2{
+	display: inline-block;
+	background: #d16a2f	;
+	margin-top: 20px;
+	color :white;
+	padding: 15px 20px;
+}
+/*-----------style TD--------------*/
+.cal_resa td{
+	padding : 5px 10px;
+}
+.cal_resa .cat-1 tr:nth-child(odd) td{
+	background: #c2ecff;
+}
+.cal_resa .cat-2 tr:nth-child(odd) td{
+	background: #fcd4bd;
+}
+/*//////////////Fin tableau///////////*/
+/*==================================TABLEAU TARIF===============================================*/
+.taxe_de_sejour .texte{
+	font-size: 17px;
+	color: #ff0100;
+}
+.taxe_de_sejour .bg_texte{
+	margin: 10px 2px;
+	margin-top: 0;
+	padding: 10px 10px;
+	background: #ffafaf;
+	text-align: center;
+}
+.taxe_de_sejour .bg_texte h5{
+	color : #ff0100;
+	font-size: 24px;
+	padding-bottom: 6px;
+	font-variant: small-caps;
+}
+/*-----------style tableau tarif ------------*/
+
+table.tarifs{
+	margin-top: 0;
+}
+section .tarifs{
+	width: 100%;	
+	text-align: center ;
+	border-collapse: collapses;
+	background: white;
+}
+.tarifs th.adh{
+	background: #7fd7ff;
+	padding: 10px;
+	color: #414141;
+	font-size: 25px;
+}
+.tarifs th.adh2{
+	background: #c2ecff;
+	color: #414141;
+	padding: 10px;
+}
+.taxe_de_sejour .tarifs tr:nth-child(odd) td,.taxe_de_sejour .tarifs tr td{
+	background: none;
+	border : none;
+}
+.tarifs input{
+	text-align: center;
+}
+.tarifs th.adh3{
+	background: #e88c57;
+	padding: 10px;
+	font-size: 25px;
+	color: 414141;
+}
+.tarifs th.adh4{
+	background: #fcd4bd;
+	color: #414141;
+	padding: 10px;
+}
+.tarifs th.adh5{
+	background: #98d82f;
+	font-size:25px;
+	padding: 10px;
+	color: 414141;
+}
+.tarifs th.adh6{
+	background: #d4ff8f;
+	color: #414141;
+	padding: 10px;
+}
+/*///////////////////////////////////////////////////////PUBLIC actualite.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.article .bg_block{
+	margin-bottom: 12px;
+}
+.article img{
+	width: 100%;
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+.article .news .date{
+	float : none;
+	padding-top: 5px;
+}
+.article .news  .divtexte p{
+/*	text-indent: 3%;*/
+/*	text-align: justify;*/
+	line-height: 120%;
+	margin-bottom: 0;
+}
+.article .suite a{
+	float: right;
+	color: #d3682b;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-size: 20px;
+	margin-right: 15px;
+}
+.article .suite a:hover {
+    text-decoration: underline;
+}
+.page_actu .news{
+	min-height: 380px;
+}
+.article .page_actu div.col-6{
+	padding-bottom: 0;
+}
+/*///////////////////////////////////////////////////////PUBLIC association.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.cal_resa .numero{
+	width: 150px;
+}
+.cal_resa .nom, .cal_resa .statut, .cal_resa .mail, .cal_resa .num{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.cal_resa .nom{
+	font-weight: 600;
+}
+.cal_resa .statut{
+	font-style: italic;
+}
+.cal_resa .mail{
+	text-decoration: underline;
+}
+/*-----------Couleurs th selon cat--------------*/
+.cal_resa th{
+	background: #7fd7ff;
+	padding: 10px;
+}
+/*-----------couleur titre tableau selon cat--------------*/
+.asso .cal_resa h2{
+	margin-bottom: 10px;
+	margin-left: 15px;
+	color: #00aeef;
+}
+/*-----------style TD--------------*/
+.cal_resa td{
+	padding : 5px 10px;
+}
+.cal_resa tr:hover td{
+	opacity : 0.6;
+}
+.cal_resa tr:nth-child(odd) td{
+	background: #c2ecff;
+}
+/*///////////Fin tableau///////////*/
+.asso .article img{
+	max-width: 40px;
+	float : left;
+}
+.asso .news{
+	margin-top: 10px;
+}
+.nom_pdf{
+	padding-top: 3px;
+}
+.nom_pdf a{
+	text-decoration: none;
+	font-weight: 600;
+	color: #383838;
+}
+.nom_pdf a:hover{
+	text-decoration: underline;
+}
+.ressources_pdf{
+	margin-left: 25px;
+	padding-bottom: 10px;
+}
+/*///////////////////////////////////////////////////////PUBLIC chalets.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.chalets .titre_page{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.chalets h1{
+	display: inline-block;
+	background: #00aeef;
+	padding: 20px 20px;
+	color: white;
+	font-weight: 600;
+}
+.image_pres_chalet img{
+	width: 100%;
+	float:left;
+}
+.float_r img{
+	float: right;
+	margin-left: 15px;
+	margin-right: 0;
+}
+p.petites img:hover{
+	border: 2px solid #00aeef;
+}
+p.petites2 img:hover{
+	border: 2px solid #00aeef;
+}
+p.petites{
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+}
+p.petites img{
+	width: 24%;
+	margin : 0;
+	margin-left: 4px;
+}
+p.petites2{
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+}
+p.petites2 img{
+	width: 24%;
+	margin : 0;
+	margin-left: 4px;
+}
+.news-2 div{
+	padding-bottom: 0;
+}2
+.news-3 div{
+	padding-bottom: 20px;
+}
+.galerie_photo{
+	position: relative;
+	margin-bottom: 15px;
+}
+.chalets .galerie_photo img{
+	width: 100%;
+}
+.galerie_photo img:hover{
+	border: 2px solid #00aeef;
+}
+.galerie_photo_div div{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.anim_img img:hover {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+0% {opacity: 0.7;}
+100% {opacity: 1;}
+}
+.galerie_photo_div .bg_suivant .suivant, .galerie_photo_div .bg_suivant{
+	padding-bottom: 0;
+	margin-top: 6px;
+}
+.galerie_photo_div .bg_suivant .suivant div{
+	text-align: center;
+	padding-bottom: 0;
+}
+.bg_block_galerie{
+	position: relative;
+}
+.chalets .bg_block_galerie .news{
+	position : static;
+}
+div.suivant .nope{
+	width: 40px;
+	height: 40px;
+	background: url(../img/ico_img_suivant.png) no-repeat center;
+	opacity: 1;
+	position: absolute;
+	bottom : 47% ;
+	right: -25px;
+}
+div.suivant .nope:hover{
+	background: url(../img/ico_img_suivant_hover.png) no-repeat center;
+}
+div.precedent .nope{
+	width: 40px;
+	height: 40px;
+	background: url(../img/ico_img_precedent.png) no-repeat center;
+	opacity: 1;
+	position: absolute;
+	left: -25px;
+	bottom : 47% ;
+}
+div.precedent .nope:hover{
+	background: url(../img/ico_img_precedent_hover.png) no-repeat center;
+}
+.entretien img{
+	width: 35%;
+}
+.plan_coordo .coordo {
+    padding: 15px;
+    margin-bottom: 30px;
+    background: #f7f7f7;
+    margin-top: 15px;
+    color: #7b7a7a;
+    text-align: center;
+    font-weight: 600;
+}
+.plan_coordo .coordo2{
+	margin-bottom: 0;
+}
+/*///////////////////////////////////////////////////////PUBLIC contact.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.contact .titre_page{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.contact h1{
+	display: inline-block;
+	background: #00aeef;
+	padding: 20px 20px;
+	color: white;
+	font-weight: 600;
+}
+/*-----------style titre label ajout------------*/
+.contact label{
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top: 20px;
+	color : #00aeef;
+	font-weight: 600;
+	font-size: 25px;
+}
+/*-----------style block input textarea et select etc...------------*/
+.contact section input, .contact section textarea, .contact section select{
+	padding: 10px 10px;
+	width: 50%;
+	font-size: 16px;
+	box-shadow: 0px 2px 5px -1px rgba(186,186,186,0.7);
+	border : 1px solid #eee;
+}
+.contact section textarea{
+	resize: vertical;
+	height: 200px;
+	width: 100%;
+}
+/*-----------bouton submit------------*/
+.contact section .submit{
+	text-align: center;
+	margin-left: 25%;
+	margin-top: 50px;
+	width: 50%;
+	border: 1px solid #aaa;
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.contact section .submit:hover{
+	background: #00d719;
+	color: white; 
+}
+.contact .tarifs .submit{
+	margin-left: 0;
+}
+
+/*///////////////////////////////////////////////////////PUBLIC ALL_ACTUALITE.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.all_actualites .bg_news{
+	height: auto;
+}
+.all_actualites .news{
+	margin-bottom: 25px;
+	position: relative;
+}
+.all_actualites .news .sep_act2{
+	bottom : -10px;
+}
+.all_actualites .bot_act {
+	position: absolute;
+	bottom: -40px;
+	right: 0;
+	width: 100%;
+}
+.all_actualites .news .date{
+	margin-left: 360px;
+}
+/* RECHERCHE */
+.recherche {
+	text-align: center;
+}
+.recherche input{
+	padding: 10px 10px;
+	width: 50%;
+	font-size: 16px;
+	box-shadow: 0px 2px 5px -1px rgba(186,186,186,0.7);
+	border : 1px solid #eee;
+}
+.recherche .recherche_texte{
+	margin-bottom: 10px;
+}
+.recherche .submit{
+	font-weight: 600;
+	font-variant: small-caps;
+}
+.recherche .submit:hover{
+	background: #00d719;
+	color :white;
+}
+.recherche .alerte{
+	margin-bottom: 15px;
+	font-variant: small-caps;
+}
+.all_actualites .titre_page{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.all_actualites h1{
+	display: inline-block;
+	background: #00aeef;
+	padding: 20px 20px;
+	color: white;
+	font-weight: 600;
+}
+.all_actualites .news:hover{
+	opacity: 0.8;
+}
+.all_actualites .news:hover img{
+	border: 2px solid #d3682b;
+}
+.pagination_top{
+	margin-top: 0;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.pagination_top a{
+	text-decoration: none;
+	color : #383838 ;
+}
+.pagination_top a:hover{
+	text-decoration: underline;
+}
+.pagination_top .actif{
+	font-weight: 600;
+	font-size: 18px;
+}
+.pagination_top li{
+	display: inline-block;
+}
+.pagination{
+	margin-top: 50px;
+	text-align: center;
+}
+.pagination a{
+	text-decoration: none;
+	color : #383838 ;
+}
+.pagination a:hover{
+	text-decoration: underline;
+}
+.pagination .actif{
+	font-weight: 600;
+	font-size: 18px;
+}
+.pagination li{
+	display: inline-block;
+}
+/*///////////////////////////////////////////////////////PUBLIC GAZETTE.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.gazette .titre_page{
+	text-align: center;
+	margin-bottom: 40px;
+}
+.gazette h1{
+	display: inline-block;
+	background: #00aeef;
+	padding: 20px 20px;
+	color: white;
+	font-weight: 600;
+}
+.gazette .ressources_pdf .pdf{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+.gazette .nom_pdf{
+	margin-top: 5px;	
+}
+/*///////////////////////////////////////////////////////PUBLIC PLANDUSITE.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.plandusite ul{
+	padding-left: 40px;
+}
+.plandusite .ul{
+	padding-top: 15px;
+	padding-left: 30px;
+}
+.plandusite ul a:hover{
+	text-decoration: underline;
+}
+.plandusite li{
+	padding-bottom: 15px;
+}
+.plandusite ul a{
+	text-decoration: none;
+	font-weight: 600;
+	color: #383838;
+}
+.plandusite .ul a{
+	font-weight: 400;
+}
+/*////////////////////////GALERIE MASONRY/////////////////////*/
+.grid-item{
+	width: 200px;
+}
+.grid-item img{
+	width: 100%;
+}
+/*///////////////////////////////////////////////////////RESPONSIVE.php/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+*/
+@media all and ( max-width: 1199px ){
+	.container{
+		width: 1000px;
+	}
+	.contact p.alerte{
+		font-size: 13px;
+	}
+	.boutons p{
+		margin: 0 11px;
+		margin-bottom: 5px;
+	}
+	.index .news .texte{
+		max-height: 48px;
+		overflow: hidden;
+		min-height: 0;
+	}
+	.agenda{
+		padding: 12px 10px;
+	}
+	.agenda .date a{
+		font-size: 16px;
+	}
+	.agenda h3{
+		font-size: 14px;
+	}
+	.agenda .com{
+		font-size: 13px;
+	}
+	video{
+		margin-top: 25px;
+	}
+
+}
+@media all and ( max-width: 1000px ){
+	.container{
+		width: 800px;
+	}
+	.contact p.alerte{
+		font-size: 13px;
+	}
+	.boutons p{
+		margin: 0 11px;
+		margin-bottom: 5px;
+	}
+	.index .news .texte{
+		max-height: 48px;
+		overflow: hidden;
+		min-height: 0;
+	}
+	.agenda{
+		padding: 12px 10px;
+	}
+	.agenda .date a{
+		font-size: 16px;
+	}
+	.agenda h3{
+		font-size: 14px;
+	}
+	.agenda .com{
+		font-size: 13px;
+	}
+	video{
+		margin-top: 25px;
+	}
+	nav a{
+		font-size: 21px;
+		padding: 13px;
+	}
+	nav ul ul li a{
+		font-size: 17px;
+	}
+	nav ul ul {
+		width: 300px;
+	}
+	.boutons a, .boutons a.resa, .boutons a.livreor{
+		font-size: 22px;
+	}
+	.index .col-8{
+		width: 100%;
+	}
+	.index .col-4{
+		width: 100%;
+	}
+	.index .news .texte{
+		max-height: 54px;
+		min-height: 54px;
+	}
+	.devenir_membre h5{
+		font-size: 17px;
+	}
+	.all_actualites .news .date{
+		margin-left: 241px;
+	}
+	.news .texte {
+	    max-height: 54Px;
+	    overflow: hidden;
+	}
+	p.petites img, p.petites2 img{
+		width: 48%;
+	}
+	.alerte {
+		margin-bottom: 10px;
+	}
+	.livre_or .alerte{
+		margin-left: 10px;
+	}
+	.g-recaptcha{
+		width: 40%;
+	}
+	nav{
+		height: 53px;
+	}
+	.contact .offset-2{
+		margin-left: 0;
+	}
+	.contact .col-8{
+		width: 100%;
+	}
+
+}
+@media all and ( max-width: 800px ){
+	.container{
+		width: 600px;
+	}
+	.contact p.alerte{
+		font-size: 13px;
+	}
+	.boutons p{
+		margin: 0 11px;
+		margin-bottom: 5px;
+	}
+	.index .news .texte{
+		max-height: 48px;
+		overflow: hidden;
+		min-height: 0;
+	}
+	.agenda{
+		padding: 12px 10px;
+	}
+	.agenda .date a{
+		font-size: 16px;
+	}
+	.agenda h3{
+		font-size: 14px;
+	}
+	.agenda .com{
+		font-size: 13px;
+	}
+	video{
+		margin-top: 25px;
+	}
+	nav li{
+		width: 100%;
+		border-right: 1px solid #d7d6d5;
+		border-left: 1px solid #d7d6d5;
+	}
+	nav{
+		height: 331px;
+	}
+	nav a{
+		font-size: 21px;
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+		border-top: 1px solid #d7d6d5;
+	}
+	nav ul ul li a{
+		font-size: 20px;
+	}
+	nav ul ul {
+		width: 100%;
+		z-index: 900;
+	}
+	nav ul ul li{
+		text-align: center;
+	}
+	.boutons p{
+		display: block;
+	}
+	.boutons a, .boutons a.resa, .boutons a.livreor{
+		font-size: 22px;
+		width: 100%;
+		display: block;
+	}
+	.index .col-8{
+		width: 100%;
+	}
+	.index .col-4{
+		width: 100%;
+	}
+	.news h3{
+		font-size: 17px;
+	}
+	.index .news .texte{
+		max-height: 54px;
+		min-height: 54px;
+	}
+	.devenir_membre h5{
+		font-size: 17px;
+	}
+	.all_actualites .news .date{
+		margin-left: 181px;
+	}
+	.news .texte {
+	    max-height: 54Px;
+	    overflow: hidden;
+	}
+
+	p.petites img, p.petites2 img{
+		width: 48%;
+	}
+	.alerte {
+		margin-bottom: 10px;
+	}
+	.livre_or h2{
+		font-size: 22px;
+	}
+	.livre_or .alerte{
+		margin-left: 10px;
+	}
+	.g-recaptcha{
+		width: 54%;
+	}
+	.contact .offset-2{
+		margin-left: 0;
+	}
+	.contact .col-8{
+		width: 100%;
+	}
+	.all_actualites	.news .texte {
+	    max-height: 36Px;
+	    overflow: hidden;
+	    min-height: 0;
+	}
+}
+@media all and ( max-width: 600px ){
+	.container{
+		width: 300px;
+	}
+	.contact p.alerte{
+		font-size: 13px;
+	}
+	.boutons p{
+		margin: 0 11px;
+		margin-bottom: 5px;
+	}
+	.index .news .texte{
+		max-height: 48px;
+		overflow: hidden;
+		min-height: 0;
+	}
+	.agenda{
+		padding: 12px 10px;
+	}
+	.agenda .date a{
+		font-size: 16px;
+	}
+	.agenda h3{
+		font-size: 13px;
+	}
+	.agenda .com{
+		font-size: 13px;
+	}
+	video{
+		margin-top: 25px;
+	}
+	nav li{
+		width: 100%;
+		border-right: 1px solid #d7d6d5;
+		border-left: 1px solid #d7d6d5;
+	}
+	nav{
+		height: 331px;
+	}
+	nav a{
+		font-size: 21px;
+		padding: 0;
+		display: inline-block;
+		width: 100%;
+		border-top: 1px solid #d7d6d5;
+	}
+	nav ul ul li a{
+		font-size: 20px;
+	}
+	nav ul ul {
+		width: 100%;
+		z-index: 900;
+	}
+	nav ul ul li{
+		text-align: center;
+	}
+	.boutons p{
+		display: block;
+	}
+	.boutons a, .boutons a.resa, .boutons a.livreor{
+		font-size: 22px;
+		width: 100%;
+		display: block;
+	}
+	.index .col-8{
+		width: 100%;
+	}
+	.index .col-4{
+		width: 100%;
+	}
+	.news h3{
+		font-size: 17px;
+	}
+	.index .news img{
+		display: none;
+	}
+	.index .news .texte{
+		max-height: 54px;
+		min-height: 54px;
+	}
+	.entretien img{
+		display: none;
+	}
+	.galerie_photo{
+		width: 50%;
+	}
+	.devenir_membre h5{
+		font-size: 17px;
+	}
+	.all_actualites .news .date{
+		margin-left: 0;
+		margin-top: 5px;
+	}
+	.all_actualites .news .texte {
+	    max-height: 200px;
+	    overflow: hidden;
+	    min-height: 0;
+	    margin-bottom: 30px;
+	}
+	.news .texte {
+	    max-height: 54Px;
+	    overflow: hidden;
+	}
+
+	p.petites img, p.petites2 img{
+		width: 48%;
+	}
+	.alerte {
+		margin-bottom: 10px;
+	}
+	.livre_or h2{
+		font-size: 22px;
+	}
+	.livre_or .alerte{
+		margin-left: 10px;
+	}
+	.g-recaptcha{
+		width: 100%;
+	}
+	.contact section input{
+		width: 100%;
+	}
+	.contact .offset-2{
+		margin-left: 0;
+	}
+	.contact section .submit{
+		width: 100%;
+		margin-left: 0;
+	}
+	.contact .col-8{
+		width: 100%;
+	}
+	#galerie_photo{
+		display: none;	
+	}
+	.recherche input{
+		width: 100%;
+	}
+	.overflow_table{
+		overflow-x: auto;
+	}
+	.col-6{
+		width: 100%;
+	}
+	section input{
+		width: 100%;
+	}
+	section .submit{
+		width: 100%;
+		margin-left: 0;
+	}
+	footer{
+		background: none;
+	}
+	.color_ft{
+		background: #d3682b;
+	}
+	header{
+		display: none;
+	}
+}
