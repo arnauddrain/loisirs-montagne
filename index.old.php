@@ -11,8 +11,6 @@
  	<meta name="viewport" content="width=device-width">
  	<link rel="stylesheet" type="text/css" href="css/style.css">
  	<link href="css/lightbox.css" rel="stylesheet">
- 	<script type="text/javascript" src="js/lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
- 	<script type="text/javascript" src="js/lightbox2-master/dist/js/lightbox.js"></script>
  </head>
  <body>
  	<?php 
@@ -144,6 +142,5 @@
  	 <?php 
  	 	include("footer.php");
  	  ?>
- <script src="js/lightbox.js"></script>
  </body>
  </html>
