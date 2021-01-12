@@ -1,0 +1,7 @@
+CREATE TABLE t_actualites (id_act INT PRIMARY KEY NOT NULL AUTO_INCREMENT, date_act DATE, titre_act VARCHAR(255), auteur_act VARCHAR(255), texte_act TEXT);
+CREATE TABLE t_calendar (id_cal INT PRIMARY KEY NOT NULL AUTO_INCREMENT, date_cal DATE, titre_cal VARCHAR(255), com_cal TEXT);
+CREATE TABLE t_admin (id_admin INT PRIMARY KEY NOT NULL AUTO_INCREMENT, mail_admin VARCHAR(255), pass_admin VARCHAR(255), role_admin VARCHAR(255));
+CREATE TABLE t_gazette (id_gaz INT PRIMARY KEY NOT NULL AUTO_INCREMENT, annee_gaz VARCHAR(255));
+CREATE TABLE t_galerie (id_img INT PRIMARY KEY NOT NULL AUTO_INCREMENT, nom_img VARCHAR(255), desc_img VARCHAR(255), id_cat INT);
+CREATE TABLE t_livre_or (id_img INT PRIMARY KEY NOT NULL AUTO_INCREMENT, nom_or VARCHAR(255), mail_or VARCHAR(255), com_or VARCHAR(255), pub_or VARCHAR(255), date_or DATE);
+CREATE TABLE t_tarifs (id_tarifs INT PRIMARY KEY NOT NULL AUTO_INCREMENT, adh_18plus VARCHAR(255), adh_1618 VARCHAR(255), adh_moins16 VARCHAR(255), nuit_18plus_a VARCHAR(255), nuit_18plus_na VARCHAR(255), nuit_1618_a VARCHAR(255), nuit_1618_na VARCHAR(255), nuit_1216_na VARCHAR(255), nuit_1216_a VARCHAR(255), nuit_312_a VARCHAR(255), nuit_moins3 VARCHAR(255), nuit_famille VARCHAR(255), arrhes_sejour VARCHAR(255), arrhes_we VARCHAR(255), taxe_18plus VARCHAR(255));
