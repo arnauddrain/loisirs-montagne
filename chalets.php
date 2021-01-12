@@ -10,7 +10,7 @@
  	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width">
  	<link rel="stylesheet" type="text/css" href="css/style.css">
- 	<link href="css/lightbox.css" rel="stylesheet">
+ 	<link href="node_modules/lightbox2/dist/css/lightbox.min.css" rel="stylesheet">
  </head>
  <body>
  	<?php 
